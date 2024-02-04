@@ -3,10 +3,22 @@ using namespace std;
 
 int main() {
 	// your code goes here
-	int t,a,b,x;
+	int t,l,d,r;
 	cin>>t;
 	for(int i=0;i<t;i++){
-	    cin>>a>>b>>x;
-	cout<<(b-a)/x<<endl;
+	    cin>>d>>l>>r;
+	    if(l<=d && d<=r){
+	        cout<<"Take second dose now"<<endl;
+	    }
+	        else if(d>=r){
+	           cout<<"Too Late"<<endl;
+	        }
+	            else if(d<=l){
+	               cout<<"Too Early"<<endl;
+	           }
+	       }
 }
-}
+	
+
+
+
